@@ -1,12 +1,9 @@
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
+import React from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export default function Home() {
+export default async function CommitHistoryPage() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-gray-600">Commit History</h1>
-    </div>
+    <>
+      <div>content here!</div>
+    </>
   );
 }
