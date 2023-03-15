@@ -1,7 +1,7 @@
 import React from 'react';
 import CommitList from '@/components/CommitList';
 
-export async function getCommits() {
+async function getCommits() {
   const url = process.env.COMMITS_API_URL || '';
   const res = await fetch(url, { next: { revalidate: 60 } });
   return await res.json();

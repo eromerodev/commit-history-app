@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Children } from 'react';
 import { CommitDto } from '@/data/CommitDto';
-import { ChatBubbleOvalLeftIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon } from '@heroicons/react/24/outline';
 
 type Props = {
   data: CommitDto[];
@@ -37,11 +37,11 @@ const CommitList = ({ data }: Props) => {
                       {commit.author}
                     </p>
 
-                    <p className="text-sm text-yellow-200 truncate">
+                    <p className="text-sm text-lime-300 truncate">
                       <code>commit: <span className="">{commit.sha}</span></code>
                     </p>
-                    <p className="mt-2 font-medium text-white">
-                      <code>{commit.message}</code>
+                    <p className="mt-2 flex items-center text-sm text-white">
+                    <CheckCircleIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-slate-300"/> <code>{commit.message}</code>
                     </p>
                   </div>
                 </div>
