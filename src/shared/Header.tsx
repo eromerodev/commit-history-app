@@ -76,10 +76,10 @@ export default function Example() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="https://github.com/eromerodev/commit-history-app"
                             className="block px-4 py-2 text-sm text-gray-700"
                           >
-                            Your Profile
+                            GitHub Repo! 🎉
                           </a>
                         )}
                       </Menu.Item>
